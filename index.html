@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Usamos la etiqueta form para indicarle a nuestro código la construcción de un formulario -->
+    <form class="form" style="box-shadow: 0 0 5px 5px rgba(26, 25, 25, 0.637)">
+
+        <div class="logo">
+        <img src="https://i.graphicmama.com/blog/wp-content/uploads/2020/05/01085602/letter-M-with-man-vector-logo-design.jpg" width="30%">
+        </div>
+
+        <h1 class="form_title">Formulario de conocimiento</h1>
+
+        <div class="form_container_infoContact">
+            
+            <!-- Subsection -->
+            <p class="form_section_titleInfoContact">Tipo de solicitud</p>
+
+            <!-- check list -->
+            <div class="form_group">
+                <div class="checkList">
+                    <input type="radio" id="vinculacion" name="tipo_vinculacion" class="custom-control-input" value="vinculacion" checked="">
+                    <label class="small text-uppercase custom-control-label" for="vinculacion">Vinculación</label>
+                    <!-- -->
+                    <input type="radio" id="actualizacion" name="tipo_vinculacion" class="custom-control-input" value="actualizacion">
+                    <label class="small text-uppercase custom-control-label" for="actualizacion">Actualización</label>
+                </div>
+            </div>
+            
+            <!-- Diligenciamiento -->
+            <p class="form_section_titleInfoContact">Información de contacto</p>
+            <div class="form_group">
+                <input type="text" id="name" class="form_input" placeholder=" ">
+                <label for="name" class="form_label"> Nombre completo: </label>
+                <span class="form_line"></span>
+            </div>
+            <!-- HACER DESPLEGABLE -->
+            <div class="form_group">
+                <input type="text" id="country" class="form_input" placeholder=" ">
+                <label for="country" class="form_label"> País: </label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="text" id="direction" class="form_input" placeholder=" ">
+                <label for="direction" class="form_label"> Dirección: </label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="number" id="postalCode" class="form_input" placeholder=" ">
+                <label for="postalCode" class="form_label"> Código Postal: </label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="text" id="city" class="form_input" placeholder=" ">
+                <label for="city" class="form_label"> Ciudad: </label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <select name="OS" id="id_type" class="form_input" placeholder=" " style="color: black;">
+                    <option selected value="0"> Tipo de identificación: </option>
+                        <option value="1">Cédula</option> 
+                        <option value="2">Pasaporte</option>
+                        <option value="2">Visa</option> 
+                 </select>
+            </div>
+            <div class="form_group">
+                <input type="number" id="id_number" class="form_input" placeholder=" ">
+                <label for="id_number" class="form_label"> Número de identificación: </label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="date" id="date_born" class="form_input" placeholder=" " style="color: black;">
+                <label for="date_born" class="form_label"> Fecha de nacimiento: </label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <select name="OS" id="gender" class="form_input" placeholder=" " style="color: black;">
+                    <option selected value="0"> Género: </option>
+                        <option value="1">Femenino</option> 
+                        <option value="2">Masculino</option> 
+                 </select>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <select name="OS" id="civil_status" class="form_input" placeholder=" " style="color: black;">
+                    <option selected value="0"> Estado civil: </option>
+                        <option value="1">Soltero/a</option> 
+                        <option value="2">Casado/a</option>
+                        <option value="2">Viudo/a</option> 
+                 </select>
+            </div>
+            <div class="form_group">
+                <select name="OS" id="contact_options" class="form_input" placeholder=" " style="color: black;">
+                    <option selected value="0"> Opciones de contacto: </option>
+                        <option value="1">Celular</option> 
+                        <option value="2">Correo</option>
+                        <option value="2">Empresa</option> 
+                 </select>
+            </div>
+            <div class="form_group">
+                <input type="tel" id="number_phone" class="form_input" placeholder=" ">
+                <label for="number_phone" class="form_label"> Número de teléfono: </label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="email" id="email" class="form_input" placeholder=" ">
+                <label for="email" class="form_label"> Email: </label>
+                <span class="form_line"></span>
+            </div>
+
+            <!-- Subsection -->
+            <p class="form_section_titleInfoContact">Grupo familiar</p>
+
+            <div class="form_group">
+                <p class="declaracion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam non earum iste minima perferendis possimus laborum porro! Repellendus ullam, similique sapiente cupiditate necessitatibus ea veniam nesciunt dolorem? Libero, perferendis autem.</p>
+                <table border="1" id="table">
+                    <tr>
+                    <td>Nombre</td>
+                    <td>Edad</td>
+                    <td>Parentesco</td>
+                    </tr>
+                
+                    <tr>
+                    <td><input type="text" /></td>
+                    <td><input type="text" /></td>
+                    <td><input type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                        </tr>
+                </table>
+            </div>
+
+            <p class="form_section_titleInfoContact">Declaración del candidato</p>
+
+            <p class="declaracion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam non earum iste minima perferendis possimus laborum porro! Repellendus ullam, similique sapiente cupiditate necessitatibus ea veniam nesciunt dolorem? Libero, perferendis autem.</p>
+            
+            <br><br>
+            <input type="submit" class="form_submit" value="Presentar solicitud">
+        </div>
+    </form>
+    
+</body>
+</html>
